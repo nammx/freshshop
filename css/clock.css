@@ -1,0 +1,82 @@
+
+
+
+.focus {
+  background: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50px;
+}
+
+.clock {
+  height: 7vh;
+  color: white;
+  font-size: 3vh;
+  font-family: sans-serif;
+  line-height: 7.4vh;
+  display: flex;
+  position: relative;
+  background: grey;
+  overflow: hidden;
+}
+
+.clock::before, .clock::after {
+  content: '';
+  width: 5ch;
+  height: 0.5vh;
+
+  position: absolute;
+  z-index: 2;
+}
+
+.clock::after {
+  bottom: 0;
+  background: ;
+}
+
+.clock > div {
+  display: flex;
+}
+
+.tick {
+  line-height: 7vh;
+}
+
+.tick-hidden {
+  opacity: 0;
+}
+
+.move {
+  animation: move linear 1s infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+.txt1{
+	text-shadow: 5px 5px 5px grey;
+	color:green;
+	text-size: 5px;
+	font-family:arial;
+	font-size: 120%;
+	font-style:italic;
+	line-height:;
+}
+.lgo{
+	font-weight:bold;
+	font-size:200%;
+    margin-bottom:20px;
+}
+.lgo:hover{
+	color:yellow;
+}
+
+.lgof{ color: white;
+Font-weight:bold;
+}
